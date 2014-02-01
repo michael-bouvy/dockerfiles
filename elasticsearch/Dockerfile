@@ -5,4 +5,4 @@ RUN         wget https://download.elasticsearch.org/elasticsearch/elasticsearch/
 RUN         dpkg -i elasticsearch-0.90.10.deb	
 
 EXPOSE      9200
-ENTRYPOINT         ["/usr/share/elasticsearch/bin/elasticsearch", "-f"]
+CMD         ["/usr/share/elasticsearch/bin/elasticsearch", "-f"]
